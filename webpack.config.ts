@@ -35,7 +35,7 @@ export default {
     },
 
     plugins: [
-        new CopyWebpackPlugin([path.resolve('./static/index.html')]),
+        // new CopyWebpackPlugin([path.resolve('./static/index.html')]),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: './static/index.html',
