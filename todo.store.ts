@@ -1,11 +1,11 @@
 import { observable, reaction, computed, action } from "mobx";
 
-interface Todo {
+export interface Todo {
     task: string
     isComplete: boolean
 }
 
-class TodoStore {
+export class TodoStore {
     @observable todoList: Todo[] = []
 
     constructor() {
